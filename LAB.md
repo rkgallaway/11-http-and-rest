@@ -6,8 +6,8 @@ The goal for this lab is to get your hands dirty in using an API, setting up a s
 ## Before you begin
 * You'll need to initialize this lab folder as a new node module, install your dependencies, setup your npm script commands, and pull in your config files
 
-## Assignment
-### Requirements
+## Assignments
+### JSON API Server
 * Implement an API server for a storefront, using json-server
   * Create a new repository called "simple-api"
   * Create a folder called `data` with a `db.json` file
@@ -22,11 +22,14 @@ The goal for this lab is to get your hands dirty in using an API, setting up a s
     * `/categories/:id/` PUT, DELETE
     * `/products`  GET, POST
     * `/products/:id/` PUT, DELETE
-  * Create a folder called `docs`
+    
+### Swagger Documentation
+  * Within your API, Create a folder called `docs`
   * Write and publish swagger documentation for your API
     * Compose with [Swagger Editor](https://swagger.io/tools/swagger-editor/) or [Swagger Hub](https://swagger.io/tools/swaggerhub/)
 
-* Implement a Web Server with express and ejs
+### Stretch Goal
+Implement a Web Server with express and ejs
   * Static routes and assets served from the public folder
   * Use 'ejs' as your 'view engine'
   * Implement your page views as you see fit
