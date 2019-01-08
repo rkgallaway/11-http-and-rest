@@ -1,42 +1,52 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB
+![CF](http://i.imgur.com/7v5ASc8.png) LAB 11
 =================================================
 
-## Project Name
+## Lab 11 HTTP and ReST
 
-### Author: Student/Group Name
+### Author: Ryan Gallaway collaborated with Fletcher LaRue
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+
+[![Build Status](https://www.travis-ci.com/rkgallaway/11-http-and-rest.svg?branch=master)](https://www.travis-ci.com/rkgallaway/11-http-and-rest)
+
+* [repo](https://github.com/rkgallaway/11-http-and-rest)
+* [travis](https://www.travis-ci.com/rkgallaway/11-http-and-rest)
+* [back-end](https://lab-11-http-and-rest-rg-fl.herokuapp.com)
 
 ### Modules
-#### `modulename.js`
+#### `server.js`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+## Overview
+The goal for this lab is to get your hands dirty in using an API, setting up a simple server that can attach to it and fetch data, and begin the building of a REST client tool that you can use during and after the course.
 
-###### `bar(array) -> array`
-Usage Notes or examples
+## Assignments
+### JSON API Server
+* Implement an API server for a storefront, using json-server
+  * Create a new repository called "simple-api"
+  * Create a folder called `data` with a `db.json` file
+  * Start your json-server from within the `simple-api` folder and "watch" your database file
+  * Data models should contain the following fields:
+    * `categories`
+      * `_id`, `name`, `display_name`, `description`
+    * `products`
+      * `_id`, `category`, `name`, `display_name`, `description`
+  * Your api should respond to the following endpoints:
+    * `/categories`  GET, POST
+    * `/categories/:id/` PUT, DELETE
+    * `/products`  GET, POST
+    * `/products/:id/` PUT, DELETE
+
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - port defined in env
 
 #### Running the app
+* `npm i` to install dependencies 
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
 
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* `npm run lint`
+* testing not required for this lab
 
-#### UML
-Link to an image of the UML for your application and response to events
